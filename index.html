@@ -1,1 +1,60 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EnableEd - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    h1 {
+      color: green;
+    }
+    .options {
+      margin-top: 50px;
+    }
+    .option-button {
+      display: inline-block;
+      padding: 20px 40px;
+      margin: 0 20px;
+      font-size: 18px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .option-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to <span style="color: green;">EnableEd</span></h1>
+  <div class="options">
+    <button class="option-button" onclick="redirectTo('reading')">Reading</button>
+    <button class="option-button" onclick="redirectTo('writing')">Writing</button>
+    <button class="option-button" onclick="redirectTo('math')">Math</button>
+  </div>
+</div>
+
+<script>
+  function redirectTo(option) {
+    window.location.href = option + ".html"; // Assuming each option has its own HTML file (reading.html, writing.html, math.html)
+  }
+</script>
+
+</body>
+</html>
